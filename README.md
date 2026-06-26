@@ -1,13 +1,36 @@
-# A Simulation Optimization Decision Framework for Composite Tunnel Support Design Using FEM, Particle Swarm Optimization, and Multi-Criteria Decision-Making
-
-
 ## Composite Tunnel-Support Optimization with PLAXIS 2D and PSO
 
-Research software for exploring composite tunnel-support configurations formed by shotcrete and steel sets. The workflow links PLAXIS 2D remote scripting, staged finite-element analysis, Particle Swarm Optimization (PSO), structural capacity checks, and result visualization.
+Research software for the numerical analysis and optimization of composite tunnel-support systems formed by shotcrete and steel sets. The project integrates PLAXIS 2D remote scripting, staged finite-element analysis, Particle Swarm Optimization (PSO), structural capacity verification, and result visualization in a reproducible computational workflow.
+
+
+## Project overview
+
+This research project addresses the selection of composite support configurations for road tunnels excavated in rock masses. The proposed workflow evaluates combinations of shotcrete thickness and steel-set profiles under different geotechnical conditions, with the objective of reducing crown displacement while maintaining structural safety.
+
+For each candidate configuration, the software:
+
+1. builds and executes a staged two-dimensional tunnel model in PLAXIS 2D;
+2. calculates the equivalent axial and flexural stiffness of the composite support;
+3. redistributes moment, thrust, and shear between the steel sets and shotcrete;
+4. verifies the structural demand against M–N and Q–N capacity envelopes;
+5. applies a factor of safety of 1.5;
+6. records feasible and non-feasible alternatives; and
+7. supports comparative analysis through CSV outputs and two- and three-dimensional visualizations.
+
+The optimization stage explores shotcrete thicknesses and a catalog of 40 steel profiles using PSO. The resulting set of feasible alternatives can subsequently support engineering comparison and multicriteria decision-making.
 
 ## Scientific scope
 
 The model evaluates combinations of shotcrete thickness and one of 40 steel profiles. For each candidate, it calculates equivalent plate properties, executes the staged tunnel model, redistributes moment, thrust, and shear between steel and shotcrete, and verifies M–N and Q–N capacity envelopes at a factor of safety of 1.5. Feasible alternatives are ranked using crown displacement within the PSO fitness value.
+
+## Researchers
+
+- **José Miguel León Ruiz** — ORCID: [0009-0000-2376-9486](https://orcid.org/0009-0000-2376-9486)
+- **Carlos Chávez Negrete** — ORCID: [0000-0002-3932-6943](https://orcid.org/0000-0002-3932-6943)
+- **José Eleazar Arreygue Rocha** — ORCID: [0000-0002-5889-7661](https://orcid.org/0000-0002-5889-7661)
+- **Francisco Domínguez Mota** — ORCID: [0000-0001-6837-172X](https://orcid.org/0000-0001-6837-172X)
+- **Monserrat Vázquez-Hernández** — ORCID: [0000-0001-9206-5706](https://orcid.org/0000-0001-9206-5706)
+- **Luis Alberto Morales Rosales** — ORCID: [0000-0002-4753-9375](https://orcid.org/0000-0002-4753-9375)
 
 ## Repository structure
 
@@ -25,9 +48,9 @@ results/                        generated CSV files (not versioned)
 figures/                        generated figures (not versioned)
 ```
 
-## Reference environment reported in the thesis
+## Reference environment used in the project
 
-The thesis reports the following environment as the one used for the experiments:
+The research project was developed and tested using the following environment:
 
 | Component | Reported version or configuration |
 |---|---|
@@ -46,13 +69,16 @@ The processor and memory values describe the original experimental machine; they
 ## Software prerequisites
 
 - Windows.
-- A valid, licensed installation of **PLAXIS 2D 2023.2**. The exact build reported in the thesis is **2023.2.1.1079**.
+- A valid, licensed installation of **PLAXIS 2D 2023.2**. The exact build used in the project is **2023.2.1.1079**.
 - PLAXIS Input and Output with Remote Scripting enabled.
-- Python **3.8.x**. For the closest reproduction of the thesis environment, use **Python 3.8.1**.
+- Python **3.8.x**. For the closest reproduction of the original project environment, use **Python 3.8.1**.
+- The geometry files:
+  - `SeccionSMIG.dxf`
+  - `SeccionSMIGTunelVer02a.dxf`
 
 ## Python dependencies
 
-The thesis and source code use the following libraries:
+The project uses the following libraries:
 
 | Package or module | Purpose | Installation source |
 |---|---|---|
@@ -69,8 +95,8 @@ The thesis and source code use the following libraries:
 | `py_package_decryptor` | Internal dependency of the supplied PLAXIS utility | Supplied by PLAXIS |
 | `python-dotenv` | Local configuration without publishing credentials | `requirements.txt` |
 | `PyYAML` | Experiment configuration files | `requirements.txt` |
-| `notebook` | Notebook server matching the thesis environment | `requirements.txt` |
-| `ipython` | Kernel matching the thesis environment | `requirements.txt` |
+| `notebook` | Notebook server matching the project environment | `requirements.txt` |
+| `ipython` | Kernel matching the project environment | `requirements.txt` |
 
 The standard-library modules `os`, `sys`, `subprocess`, `time`, `json`, `random`, and `math` require no separate installation.
 
@@ -88,7 +114,7 @@ A different installation directory can be supplied through `PLAXIS_HOME` in `.en
 
 ### 2. Create the Python environment
 
-For the closest match to the thesis, create the environment with Python 3.8.1:
+For the closest match to the original project environment, create the environment with Python 3.8.1:
 
 ```powershell
 py -3.8 -m venv .venv
@@ -143,17 +169,12 @@ Expert > Run Python script > Open...
 
 The original Bentley instructions are preserved in `vendor/plaxis_support_capacity/README.md`.
 
-### 5. Add the required geometry
+### 5. Add the geometry files
 
-Place the missing topographic geometry at:
+Place the required geometry files in:
 
 ```text
 data\geometry\SeccionSMIG.dxf
-```
-
-The tunnel cross-section already included in the repository is:
-
-```text
 data\geometry\SeccionSMIGTunelVer02a.dxf
 ```
 
@@ -165,17 +186,17 @@ From a Windows command prompt with the virtual environment activated:
 scripts\run_pso.bat
 ```
 
-The scientific parameters in `scripts/run_pso_legacy.py` are preserved from the supplied experiment. Inspect the number of particles and iterations before starting because every objective-function evaluation executes a PLAXIS calculation. The thesis reports PSO experiments based on 10 particles and 20, 40, or 60 iterations, corresponding to 200, 400, and 600 evaluations.
+The scientific parameters in `scripts/run_pso_legacy.py` are preserved from the supplied experiment. Inspect the number of particles and iterations before starting because every objective-function evaluation executes a PLAXIS calculation. The project considers PSO experiments based on 10 particles and 20, 40, or 60 iterations, corresponding to 200, 400, and 600 evaluations.
 
 ## Running the notebooks
 
-The thesis reports Jupyter Notebook server 6.4.11 and IPython 8.12.1. After installation:
+The project uses Jupyter Notebook server 6.4.11 and IPython 8.12.1. After installation:
 
 ```powershell
 jupyter notebook
 ```
 
-Open the notebooks in `notebooks/`. These notebooks are retained as historical experimental records; the maintained command-line workflow is the preferred execution path.
+Open the notebooks in `notebooks/`. These notebooks are retained as experimental records; the maintained command-line workflow is the preferred execution path.
 
 ## Static validation without PLAXIS
 
