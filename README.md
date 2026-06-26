@@ -1,3 +1,5 @@
+#A Simulation–Optimization–Decision Framework for Composite Tunnel Support Design Using FEM, Particle Swarm Optimization, and Multi-Criteria Decision-Making
+
 ## Composite Tunnel-Support Optimization with PLAXIS 2D and PSO
 
 Research software for the numerical analysis and optimization of composite tunnel-support systems formed by shotcrete and steel sets. The project integrates PLAXIS 2D remote scripting, staged finite-element analysis, Particle Swarm Optimization (PSO), structural capacity verification, and result visualization in a reproducible computational workflow.
