@@ -1,0 +1,22 @@
+case: 1
+experiment: 1
+geotechnical:
+  Erm_kPa: 500000
+  GSI: 40
+  disturbance: 0.5
+pso:
+  particles: 10
+  iterations: 40
+  c1: 0.5
+  c2: 0.3
+  inertia_weight: 0.9
+shotcrete:
+  thickness_min_m: 0.10
+  thickness_max_m: 0.50
+  compressive_strength_kPa: 32800
+  tensile_strength_kPa: 3280
+  young_modulus_kPa: 14000000
+  poisson_ratio: 0.21
+  unit_weight_kN_m3: 27
+structural_check:
+  factor_of_safety: 1.5

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Tunnel Support Optimization with PLAXIS 2D and PSO"
+message: "Please cite the associated publication and this software repository."
+type: software
+authors:
+  - family-names: "León Ruiz"
+    given-names: "José Miguel"
+  - family-names: "Morales Rosales"
+    given-names: "Luis Alberto"
+  - family-names: "Chávez Negrete"
+    given-names: "Carlos"
+  - family-names: "Domínguez Mota"
+    given-names: "Francisco Javier"
+  - family-names: "Arreygue Rocha"
+    given-names: "José Eleazar"
+version: 0.1.0
+date-released: 2026-06-26
+license: other

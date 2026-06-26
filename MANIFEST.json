@@ -1,0 +1,177 @@
+[
+  {
+    "path": ".env.example",
+    "sha256": "8ee0774193aaeee9fea8503a7b8de08bc64a5da1237fb290f39bd6a6c377a871",
+    "bytes": 465
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "c2412eb5d45f00ef57512cbc342cd9f24ad342a3c6e8c86bb9a2bd970efb2a1d",
+    "bytes": 314
+  },
+  {
+    "path": "CITATION.cff",
+    "sha256": "c67bff23235fe869258b142b38a1b34d1be89e9a154a6079d237687645f3270a",
+    "bytes": 572
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "sha256": "5c3c1859f90148d03d78df710b45d9e70086be27a40c9a0acdd04d29be30da2e",
+    "bytes": 439
+  },
+  {
+    "path": "LICENSES/PPL-1.0.txt",
+    "sha256": "f05038616e110d295a31cc3a4357b91ad2df7749387996c5b207447cbc5be5d9",
+    "bytes": 30426
+  },
+  {
+    "path": "README.md",
+    "sha256": "6d1a51676d4133c351a0aaa25301dc9d1e3ef2919214feff9d2a3ec53b61a148",
+    "bytes": 3804
+  },
+  {
+    "path": "SECURITY.md",
+    "sha256": "324e6ee1a8109b8eac009b25fe9f47d09f35d99657f0144c9a2f82e5ee338697",
+    "bytes": 381
+  },
+  {
+    "path": "config/experiment.example.yaml",
+    "sha256": "22a697ec56ace0a927559afb9a3b868ef2489bd4da6a2e381f4650123a22ef3e",
+    "bytes": 403
+  },
+  {
+    "path": "data/geometry/README.md",
+    "sha256": "46a43d0ec1c01d06f4b73e4b9402d02e384be98f03436f9434a0b4cd7b5f83a6",
+    "bytes": 415
+  },
+  {
+    "path": "data/geometry/SeccionSMIGTunelVer02a.dxf",
+    "sha256": "9c50964ed55cbebfd8dd6c2fbc971044f97858d2753009d57b1a120be6fd7cb8",
+    "bytes": 172705
+  },
+  {
+    "path": "data/input/NombresSostenimiento.csv",
+    "sha256": "32faf7f6633e97672a68960dfe21a96efabc8824d24fe73a6c5d6ea47406ace4",
+    "bytes": 3290
+  },
+  {
+    "path": "data/input/steel_profiles.csv",
+    "sha256": "b4fd011d7a1b8852524c1dc65231377e1cb83dce02513657d76074b01fe2623b",
+    "bytes": 3287
+  },
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "sha256": "a66dea515cf6b0e163532c0e0f9329afcca7e44d7ec9224fc8398a70736b0948",
+    "bytes": 833
+  },
+  {
+    "path": "docs/REPRODUCIBILITY.md",
+    "sha256": "8d0e9c4bf650ab4c434fc71d1a68d04bc7897510c251fc97f85b32132cc76dc5",
+    "bytes": 1104
+  },
+  {
+    "path": "docs/THIRD_PARTY_NOTICES.md",
+    "sha256": "71cb0760e7ac4c63c98c73f556255ddb2143604030a1a5c0657269eee2b55c69",
+    "bytes": 690
+  },
+  {
+    "path": "figures/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "notebooks/README.md",
+    "sha256": "dbef5c6572e6f66a5852208f5f800b882ba3f6e099675800944c697237007c16",
+    "bytes": 286
+  },
+  {
+    "path": "notebooks/graficas_resultados.ipynb",
+    "sha256": "1d9d96604e0a331da3297e651c12fd8e897f70831d1e8763d1eb16de4f382228",
+    "bytes": 41067
+  },
+  {
+    "path": "notebooks/pso_optimiza.ipynb",
+    "sha256": "bafac4b2f71841fa74503bd0e943e8edb2a7c188eeee69cdf1e5cd0c7011e92d",
+    "bytes": 983631
+  },
+  {
+    "path": "pyproject.toml",
+    "sha256": "6c601099ae9d7320751eadca557e3a0a94103cafca968391188e9e4a6d2290fc",
+    "bytes": 389
+  },
+  {
+    "path": "requirements.txt",
+    "sha256": "1764b9c21a4cea7955ef583b6e7676fae3d82262046bbd3f8b3b0571363f65dd",
+    "bytes": 239
+  },
+  {
+    "path": "results/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "scripts/check_repository.py",
+    "sha256": "704e28a8ffe3456f2ed230c32a47c1728a3d87fdc7ca28695528de31358977fb",
+    "bytes": 1316
+  },
+  {
+    "path": "scripts/graficas_resultados_legacy.py",
+    "sha256": "b5784c64d68854863d6ea34cd7bcfe148e7790410940412466ef0d6f83d3eb35",
+    "bytes": 21958
+  },
+  {
+    "path": "scripts/run_pso.bat",
+    "sha256": "494299c325ae368875a30f9dbe780ea035a369e0c3d2aeacdf9a5d8ab4f69fad",
+    "bytes": 217
+  },
+  {
+    "path": "scripts/run_pso_legacy.py",
+    "sha256": "ecfbf1e8ec94a471cf85b55c99c27ec58a1b2ce99dd7a8fda2808ff994ffeb37",
+    "bytes": 27222
+  },
+  {
+    "path": "src/tunnel_support_optimization/__init__.py",
+    "sha256": "e2f06d78cbc85202ff8b9e213c2b1525ab703447d5f64254a010f4c290bdd588",
+    "bytes": 82
+  },
+  {
+    "path": "src/tunnel_support_optimization/modelo_tunel.py",
+    "sha256": "beee31f68730cbd5709c3c406f4704b0e3b23c6721c531e91e2965e322601051",
+    "bytes": 61107
+  },
+  {
+    "path": "src/tunnel_support_optimization/settings.py",
+    "sha256": "1a86d13cf8814dbb3a0a92f0ea2990ac21a52f4b76dabcdcc830123ae1f91264",
+    "bytes": 2407
+  },
+  {
+    "path": "tests/test_settings.py",
+    "sha256": "72abbceebe6680299cd77aa188ec9df6754e25aa4e15287fbc03d5425f0c6bd4",
+    "bytes": 196
+  },
+  {
+    "path": "vendor/plaxis_support_capacity/PPL_Plaxis_Public_Licence.txt",
+    "sha256": "f05038616e110d295a31cc3a4357b91ad2df7749387996c5b207447cbc5be5d9",
+    "bytes": 30426
+  },
+  {
+    "path": "vendor/plaxis_support_capacity/README_PLAXIS.md",
+    "sha256": "08ab1671b5cd0f0079ff00d6e2a5495370d42054a6e3a8b9123ef053729f9aaa",
+    "bytes": 3433
+  },
+  {
+    "path": "vendor/plaxis_support_capacity/TunnelCompositeSectionLibrary_Input.pyw",
+    "sha256": "ada43f3155e291b6d19751414d2f5b7b0753ca57c1ca4e6c2101022aa6c35a9e",
+    "bytes": 38193
+  },
+  {
+    "path": "vendor/plaxis_support_capacity/TunnelSupportCapacityPlot_Output.pyw",
+    "sha256": "61738ba87b464e2221f715bc13ae3c438f463e8fb28a8db771fbcd32d0dcc7c8",
+    "bytes": 23966
+  },
+  {
+    "path": "vendor/plaxis_support_capacity/shared_composite_tunnel_support.py",
+    "sha256": "20f525810f33d3efba5695a86d57936f0778111b02bb314cc9a345987ba8f77d",
+    "bytes": 3197
+  }
+]
